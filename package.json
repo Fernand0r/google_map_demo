@@ -7,7 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.6",
+    "@vue/composition-api": "^1.2.4",
     "core-js": "^3.6.5",
+    "shapefile": "^0.6.6",
+    "shpjs": "^4.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
