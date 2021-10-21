@@ -99,7 +99,8 @@ export default {
       map_ins.data.setStyle({
         strokeColor: "blue",
       })
-      centerMarker({lat: geoJson.coordinates[0][0][0][1], lng: geoJson.coordinates[0][0][0][0]})
+      const [[[lng, lat], ...rest2], ...rest1] = geoJson.coordinates.flat()
+      if (lng && lat) centerMarker({lat, lng})
       map_ins.setZoom(12)
     }
 
